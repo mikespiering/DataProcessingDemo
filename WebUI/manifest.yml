@@ -1,0 +1,8 @@
+---
+applications:
+- name: webgui
+  memory: 512M 
+  instances: 1
+  path: ./target/gs-crud-with-vaadin-0.1.0.jar
+  env:
+     LOAD_ENDPOINT: http://sqlrestaccess.apps.edite.kim/location	
