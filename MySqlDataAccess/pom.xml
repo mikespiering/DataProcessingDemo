@@ -47,7 +47,7 @@
               <target>http://api.system.edite.kim</target>
               <org>edite</org>
               <space>DemoDay</space>
-              <appname>sqlrestaccessTest</appname>
+              <appname>sqlrestaccess</appname>
               <memory>512</memory>
               <instances>5</instances>
               <env>

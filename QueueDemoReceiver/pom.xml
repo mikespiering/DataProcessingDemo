@@ -87,7 +87,7 @@
               <instances>10</instances>
               <env>
                   <spring.jpa.hibernate.ddl-auto>update</spring.jpa.hibernate.ddl-auto>
-                  <LOCATION_ENDPOINT>https://sqlrestaccessTest.apps.edite.kim/location</LOCATION_ENDPOINT>
+                  <LOCATION_ENDPOINT>https://sqlrestaccess.apps.edite.kim/location</LOCATION_ENDPOINT>
               </env>
               <services>
                   <service>
