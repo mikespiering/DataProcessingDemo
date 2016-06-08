@@ -11,6 +11,7 @@
     <module>MySqlDataAccess</module>
     <module>QueueDemoReceiver</module>
     <module>MongoDataAccessFake</module>
+    <module>WebUI</module>
 <!--      <module>MongoDataAccess</module> -->
   </modules>
 </project>
