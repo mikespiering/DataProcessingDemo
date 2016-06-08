@@ -44,6 +44,33 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+          <groupId>org.cloudfoundry</groupId>
+          <artifactId>cf-maven-plugin</artifactId>
+          <version>1.1.2</version>
+          <configuration>
+              <target>http://api.system.edite.kim</target>
+              <org>edite</org>
+              <space>DemoDay</space>
+              <username>BLANK</username>
+              <password>BLANK</password>
+              <appname>mongoreader</appname>
+              <memory>1024</memory>
+              <instances>1</instances>
+              <env>
+                  <spring.jpa.hibernate.ddl-auto>update</spring.jpa.hibernate.ddl-auto>
+              </env>
+              <services>
+                  <service>
+                      <name>testrabbit</name>
+                      <label>p-rabbitmq</label>
+                      <provider>p-rabbitmq</provider>
+                      <plan>standard</plan>
+                  </service>
+                 <!-- Need User provided service to bind to -->
+              </services>
+          </configuration>
+      </plugin>
         </plugins>
     </build>
 
