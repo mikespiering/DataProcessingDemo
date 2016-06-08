@@ -81,8 +81,7 @@
               <target>http://api.system.edite.kim</target>
               <org>edite</org>
               <space>DemoDay</space>
-              <username>BLANK</username>
-              <password>BLANK</password>
+              <server>cloud-foundry-credentials</server>
               <appname>queuereader</appname>
               <memory>2048</memory>
               <instances>10</instances>

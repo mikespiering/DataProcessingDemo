@@ -56,8 +56,7 @@
               <target>http://api.system.edite.kim</target>
               <org>edite</org>
               <space>DemoDay</space>
-              <username>BLANK</username>
-              <password>BLANK</password>
+              <server>cloud-foundry-credentials</server>
               <appname>fakemongoreader</appname>
               <memory>1024</memory>
               <instances>1</instances>
