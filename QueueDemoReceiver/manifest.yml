@@ -1,0 +1,8 @@
+applications:
+- name: QueueReader
+  memory: 2G
+  instances: 1
+  host: qreader
+  path: ./target/queuedemo-0.0.1-SNAPSHOT.jar
+  services:
+    - testrabbit

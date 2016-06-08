@@ -1,0 +1,9 @@
+applications:
+- name: mongoReader
+  memory: 1G
+  instances: 1
+  host: mongoreader
+  path: ./target/gs-accessing-mongodb-data-rest-0.1.0.jar
+  services:
+    - testmongo
+    - testrabbit

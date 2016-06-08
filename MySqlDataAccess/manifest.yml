@@ -1,0 +1,10 @@
+applications:
+- name: sqlRestAccess
+  memory: 512M
+  instances: 1
+  host: sqlrestaccess
+  path: ./target/gs-accessing-data-rest-0.1.0.jar
+  env:
+     spring.jpa.hibernate.ddl-auto: update
+  services:
+    - testmysql

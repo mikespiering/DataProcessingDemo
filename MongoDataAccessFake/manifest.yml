@@ -1,0 +1,12 @@
+applications:
+- name: mongoReaderFake
+  memory: 1G
+  instances: 1
+  host: mongoreaderfake
+  path: ./target/gs-accessing-mongodb-data-rest-0.1.0.jar
+  env:
+     spring.jpa.hibernate.ddl-auto: create
+  services:
+    - fakemongo
+    - testrabbit
+    

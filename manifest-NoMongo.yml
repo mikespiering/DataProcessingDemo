@@ -1,0 +1,27 @@
+applications:
+- name: sqlRestAccess
+  memory: 512M
+  instances: 5
+  host: sqlrestaccess
+  path: ./MySqlDataAccess/target/gs-accessing-data-rest-0.1.0.jar
+  env:
+     spring.jpa.hibernate.ddl-auto: update
+  services:
+    - testmysql
+- name: QueueReader
+  memory: 2G
+  instances: 10
+  host: qreader
+  path: ./QueueDemoReceiver/target/queuedemo-0.0.1-SNAPSHOT.jar
+  services:
+    - testrabbit
+- name: mongoReaderFake
+  memory: 1G
+  instances: 1
+  host: mongoreaderfake
+  path: ./MongoDataAccessFake/target/gs-accessing-fake-data-rest-0.1.0.jar
+  env:
+     spring.jpa.hibernate.ddl-auto: update
+  services:
+    - fakemongo
+    - testrabbit
