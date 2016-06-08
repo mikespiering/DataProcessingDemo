@@ -13,6 +13,8 @@ applications:
   instances: 10
   host: qreader
   path: ./QueueDemoReceiver/target/queuedemo-0.0.1-SNAPSHOT.jar
+  env:
+     LOCATION_ENDPOINT: http://sqlrestaccess.apps.edite.kim/location
   services:
     - testrabbit
 - name: mongoReader

@@ -40,8 +40,7 @@ class MongoCommandLineRunner implements CommandLineRunner {
 			
 			while (scanner.hasNextLine()) {
 			    String line = scanner.nextLine();
-			    if(dataCnt>10)
-				continue;
+			   
 			    //10000066022250111051,000,0,4383 DOUBLETREE LANE,City,CA,90210
 			    String splitLine[]=line.split(",");
 			    Location loc = new Location(splitLine[0],splitLine[3],splitLine[4],splitLine[5],splitLine[6],splitLine[2],splitLine[1]);
