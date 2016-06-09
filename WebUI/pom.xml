@@ -70,12 +70,16 @@
           <version>1.1.2</version>
           <configuration>
               <target>http://api.system.edite.kim</target>
+              <trustSelfSignedCerts>true</trustSelfSignedCerts>
               <org>edite</org>
               <space>DemoDay</space>
               <server>cloud-foundry-credentials</server>
               <appname>WebUI</appname>
               <memory>512</memory>
               <instances>1</instances>
+               <env>
+                  <LOAD_ENDPOINT>http://sqlrestaccess.apps.edite.kim/location</LOAD_ENDPOINT>
+              </env>
           </configuration>
       </plugin>
         </plugins>
